@@ -99,7 +99,7 @@
   --text-color: white;
   --base-font: 16px;
   --font-family: Lab Grotesque, -apple-system, BlinkMacSystemFont, Arial, Liberation Sans,Nimbus Sans L, sans-serif;
-  --card-height: 500px;
+  --card-height: 400px;
   --card-width: 600px;
   --primary-color: rgba(0, 190, 162, 0.8);
   --card-font-size: 1.5rem;
@@ -203,7 +203,7 @@ body {
 
 @media screen and (max-width: 1124px) {
   :root {
-    --card-height: 400px;
+    --card-height: 350px;
     --card-width: 500px;
   }
 
