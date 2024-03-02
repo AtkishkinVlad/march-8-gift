@@ -180,7 +180,7 @@ body {
   align-items: center;
   gap: calc(2 * var(--base-font));
   margin-bottom: calc(2 * var(--base-font));
-  margin-top: var(--base-font);
+  margin-top: calc(2 * var(--base-font));
 }
 
 .card__button:focus-visible {
