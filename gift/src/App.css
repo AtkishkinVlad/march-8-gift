@@ -101,7 +101,8 @@
   --font-family: Lab Grotesque, -apple-system, BlinkMacSystemFont, Arial, Liberation Sans,Nimbus Sans L, sans-serif;
   --card-height: 500px;
   --card-width: 500px;
-  --primary-color: #00BEA2;
+  --primary-color: rgba(0, 190, 162, 0.8);
+  --card-font-size: 1.5rem;
 }
 
 body {
@@ -199,14 +200,7 @@ body {
   background-color: var(--primary-color);
   border-radius: var(--base-font);
   padding: var(--base-font);
-}
-
-.card__article {
-  height: var(--card-height);
-  width: var(--card-width);
-  background-color: var(--primary-color);
-  border-radius: var(--base-font);
-  padding: var(--base-font);
+  font-size: var(--card-font-size);
 }
 
 @media screen and (max-width: 1124px) {

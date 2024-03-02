@@ -7,9 +7,9 @@ export const DiadocFirstFlipCard = ({ isFlipped, setIsFlipped }) => (
         <button className='card__button' onClick={setIsFlipped}>
             Первая карточка с тайной о самом важном
         </button>
-        <article className='card__article'>
+        <button className='card__button' onClick={setIsFlipped}>
             Самое важное — быть среди любимых в этот день (обнимаю)
-        </article>
+        </button>
     </ReactCardFlip>
 )
 
@@ -21,9 +21,9 @@ export const DiadocSecondFlipCard = ({ isFlipped, setIsFlipped }) => (
                 Сердечко для тебя
             </p>
         </button>
-        <article className='card__article'>
+        <button className='card__button' onClick={setIsFlipped}>
             Самое важное — быть среди любимых в этот день (обнимаю)
-        </article>
+        </button>
     </ReactCardFlip>
 )
 
@@ -32,8 +32,8 @@ export const DiadocThirdFlipCard = ({ isFlipped, setIsFlipped }) => (
         <button className='card__button' onClick={setIsFlipped}>
             Первая карточка с тайной о самом важном
         </button>
-        <article className='card__article'>
+        <button className='card__button' onClick={setIsFlipped}>
             Самое важное — быть среди любимых в этот день (обнимаю)
-        </article>
+        </button>
     </ReactCardFlip>
 )

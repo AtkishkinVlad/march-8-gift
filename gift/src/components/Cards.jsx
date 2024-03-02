@@ -9,9 +9,9 @@ export const Cards = () => {
 
   return (
     <section className='cards'>
-        <DiadocFirstFlipCard isFlipped={isFlippedFirstCard} setIsFlipped={setIsFlippedFirstCard} />
-        <DiadocSecondFlipCard isFlipped={isFlippedSecondCard} setIsFlipped={setIsFlippedSecondCard} />
-        <DiadocThirdFlipCard isFlipped={isFlippedThirdCard} setIsFlipped={setIsFlippedThirdCard} />
+        <DiadocFirstFlipCard isFlipped={isFlippedFirstCard} setIsFlipped={() => setIsFlippedFirstCard(!isFlippedFirstCard)} />
+        <DiadocSecondFlipCard isFlipped={isFlippedSecondCard} setIsFlipped={() => setIsFlippedSecondCard(!isFlippedSecondCard)} />
+        <DiadocThirdFlipCard isFlipped={isFlippedThirdCard} setIsFlipped={() => setIsFlippedThirdCard(!isFlippedThirdCard)} />
     </section>
   )
 }
