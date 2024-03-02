@@ -105,6 +105,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-size: var(--base-font);
+  font-family: var(--font-family);
 }
 
 .header {
