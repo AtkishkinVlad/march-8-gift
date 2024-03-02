@@ -170,7 +170,7 @@ body {
 }
 
 .figcaption {
-  font-size: calc(2 * var(--base-font));
+  font-size: 2rem;
 }
 
 .cards {
@@ -216,6 +216,10 @@ body {
   .congratulations {
     width: 95%;
   }
+
+  .figcaption {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -230,6 +234,10 @@ body {
 
   .congratulations {
     width: 90%;
+    font-size: 1rem;
+  }
+
+  .figcaption {
     font-size: 1rem;
   }
 }
