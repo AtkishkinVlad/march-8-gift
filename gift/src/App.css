@@ -110,6 +110,7 @@ body {
   color: var(--text-color);
   font-size: var(--base-font);
   font-family: var(--font-family);
+  animation: fadeIn 2.5s;
 }
 
 .header {
@@ -262,4 +263,9 @@ body {
   .congratulations {
     width: 90%;
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
