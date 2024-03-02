@@ -110,7 +110,7 @@ body {
   color: var(--text-color);
   font-size: var(--base-font);
   font-family: var(--font-family);
-  animation: fadeIn 2.5s;
+  animation: fadeIn 1.5s;
 }
 
 .header {
@@ -153,6 +153,7 @@ body {
   margin-right: var(--base-font);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 50% 90%, 0 90%);
   background: linear-gradient(to bottom right, var(--primary-color), #333333c2);
+  animation: fromRigth 1s;
 }
 
 .arrow {
@@ -259,4 +260,9 @@ body {
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@keyframes fromRigth {
+  0% { transform: translateX(10000px); }
+  100% { transform: translateX(0px); }
 }
