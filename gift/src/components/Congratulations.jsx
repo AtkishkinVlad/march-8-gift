@@ -5,7 +5,7 @@ export const Congratulations = () => (
           flexFlow: 'column nowrap',
           gap: '16px',
         }}>
-          <span>Дорогая, Яна кисяк.</span> 
+          <span>Дорогая, Яна кисяк !</span> 
           <span>Поздравляю тебя с этим прекрасным днем.</span>
           <span>Мы вместе прошли через огонь, воду, ... и это было круто!</span>
         </p>
