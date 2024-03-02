@@ -99,7 +99,7 @@
   --text-color: white;
   --base-font: 16px;
   --font-family: Lab Grotesque, -apple-system, BlinkMacSystemFont, Arial, Liberation Sans,Nimbus Sans L, sans-serif;
-  --card-height: 600px;
+  --card-height: 500px;
   --card-width: 600px;
   --primary-color: rgba(0, 190, 162, 0.8);
   --card-font-size: 1.5rem;
@@ -204,8 +204,8 @@ body {
 
 @media screen and (max-width: 1124px) {
   :root {
-    --card-height: 450px;
-    --card-width: 450px;
+    --card-height: 400px;
+    --card-width: 500px;
   }
 
   .content {
@@ -223,8 +223,8 @@ body {
 
 @media screen and (max-width: 768px) {
   :root {
-    --card-height: 350px;
-    --card-width: 350px;
+    --card-height: 300px;
+    --card-width: 400px;
   }
 
   .content {
@@ -243,8 +243,8 @@ body {
 
 @media screen and (max-width: 500px) {
   :root {
-    --card-height: 250px;
-    --card-width: 250px;
+    --card-height: 200px;
+    --card-width: 300px;
   }
 
   .content {
