@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@skbkontur/icons": "^1.7.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-card-flip": "^1.2.2",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

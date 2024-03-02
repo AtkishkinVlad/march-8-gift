@@ -99,6 +99,9 @@
   --text-color: white;
   --base-font: 16px;
   --font-family: Lab Grotesque, -apple-system, BlinkMacSystemFont, Arial, Liberation Sans,Nimbus Sans L, sans-serif;
+  --card-height: 500px;
+  --card-width: 500px;
+  --primary-color: #00BEA2;
 }
 
 body {
@@ -145,8 +148,10 @@ body {
   padding-bottom: calc(3 * var(--base-font));
   padding-left: var(--base-font);
   padding-right: var(--base-font);
+  margin-left: var(--base-font);
+  margin-right: var(--base-font);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 50% 90%, 0 90%);
-  background: linear-gradient(to bottom right, #2de5c9eb, #1d1f11c2);
+  background: linear-gradient(to bottom right, var(--primary-color), #333333c2);
 }
 
 .arrow {
@@ -165,4 +170,92 @@ body {
 
 .figcaption {
   font-size: calc(2 * var(--base-font));
+}
+
+.cards {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: calc(2 * var(--base-font));
+  margin-bottom: calc(2 * var(--base-font));
+}
+
+.card__button:focus-visible {
+  border: 4px solid var(--text-color);
+}
+
+.card__button:hover,
+.card__article:hover {
+  border: 4px solid var(--text-color);
+}
+
+.card__button {
+  border: none;
+  padding: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  height: var(--card-height);
+  width: var(--card-width);
+  background-color: var(--primary-color);
+  border-radius: var(--base-font);
+  padding: var(--base-font);
+}
+
+.card__article {
+  height: var(--card-height);
+  width: var(--card-width);
+  background-color: var(--primary-color);
+  border-radius: var(--base-font);
+  padding: var(--base-font);
+}
+
+@media screen and (max-width: 1124px) {
+  :root {
+    --card-height: 400px;
+    --card-width: 400px;
+  }
+
+  .content {
+    max-width: 768px;
+  }
+
+  .congratulations {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --card-height: 300px;
+    --card-width: 300px;
+  }
+
+  .content {
+    max-width: 578px;
+  }
+
+  .congratulations {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --card-height: 200px;
+    --card-width: 200px;
+  }
+
+  .content {
+    max-width: 350px;
+    --base-font: 12px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .congratulations {
+    width: 90%;
+  }
 }
