@@ -196,7 +196,7 @@ body {
   width: var(--card-width);
   background-color: var(--primary-color);
   border-radius: var(--base-font);
-  padding: var(--base-font);
+  padding: calc(2 * var(--base-font));
   font-size: var(--card-font-size);
   font-family: var(--font-family);
   font-weight: 700;
