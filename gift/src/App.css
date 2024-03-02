@@ -181,12 +181,12 @@ body {
 }
 
 .card__button:focus-visible {
-  border: 4px solid var(--text-color);
+  outline: 4px solid var(--text-color);
 }
 
 .card__button:hover,
 .card__article:hover {
-  border: 4px solid var(--text-color);
+  outline: 4px solid var(--text-color);
 }
 
 .card__button {
