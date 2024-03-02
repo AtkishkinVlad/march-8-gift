@@ -103,6 +103,35 @@
   --card-width: 600px;
   --primary-color: rgba(0, 190, 162, 0.8);
   --card-font-size: 1.5rem;
+  --secondary-bg-color: #333333c2;
+}
+
+.diadoc {
+  position: fixed;
+  top: calc(3 * var(--base-font));
+  left: calc(3 * var(--base-font));
+  transform: rotate(-5deg);
+}
+
+.pagediadoc {
+  position: fixed;
+  top: calc(4 * var(--base-font));
+  right: calc(4 * var(--base-font));
+  transform: rotate(5deg) scale(2);
+}
+
+.incoming {
+  position: fixed;
+  bottom: calc(4 * var(--base-font));
+  right: calc(4 * var(--base-font));
+  transform: rotate(-5deg) scale(2);
+}
+
+.outgoing {
+  position: fixed;
+  bottom: calc(4 * var(--base-font));
+  left: calc(4 * var(--base-font));
+  transform: rotate(5deg) scale(2);
 }
 
 body {
@@ -110,7 +139,7 @@ body {
   color: var(--text-color);
   font-size: var(--base-font);
   font-family: var(--font-family);
-  animation: fadeIn 1.5s;
+  animation: fadeIn 2s;
 }
 
 .header {
@@ -152,8 +181,9 @@ body {
   margin-left: var(--base-font);
   margin-right: var(--base-font);
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 75% 90%, 75% 100%, 50% 90%, 0 90%);
-  background: linear-gradient(to bottom right, var(--primary-color), #333333c2);
+  background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-bg-color));
   animation: fromRigth 1s;
+  will-change: contents;
 }
 
 .arrow {
@@ -203,6 +233,15 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1440px) {
+  .diadoc,
+  .incoming,
+  .outgoing,
+  .pagediadoc {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1124px) {
   :root {
     --card-height: 350px;
@@ -241,6 +280,18 @@ body {
   }
 }
 
+.footer {
+  text-align: center;
+  font-size: calc(2 * var(--base-font));
+  color: var(--text-color);
+  font-weight: 700;
+  margin-top: calc(2 * var(--base-font));
+  margin-bottom: calc(3 * var(--base-font));
+  background-color: var(--secondary-bg-color);
+  padding: calc(0.5 * var(--base-font));
+  border-radius: var(--base-font);
+}
+
 @media screen and (max-width: 500px) {
   :root {
     --card-height: 200px;
@@ -263,6 +314,6 @@ body {
 }
 
 @keyframes fromRigth {
-  0% { transform: translateX(10000px); }
+  0% { transform: translateX(600px); }
   100% { transform: translateX(0px); }
 }
