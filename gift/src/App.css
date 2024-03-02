@@ -230,6 +230,7 @@ body {
   padding: calc(2 * var(--base-font));
   font-size: var(--card-font-size);
   font-family: var(--font-family);
+  background-image: url('./assets/pattern.svg');
   font-weight: 700;
 }
 

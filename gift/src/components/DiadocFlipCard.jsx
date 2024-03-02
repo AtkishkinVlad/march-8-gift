@@ -1,6 +1,6 @@
 import ReactCardFlip from 'react-card-flip';
 
-import { HeartIcon64Regular } from '@skbkontur/icons';
+import { HeartIcon64Regular } from '@skbkontur/icons/icons/HeartIcon/HeartIcon64Regular';
 
 export const DiadocFirstFlipCard = ({ isFlipped, setIsFlipped }) => (
     <ReactCardFlip isFlipped={isFlipped} flipDirection='vertical'>
